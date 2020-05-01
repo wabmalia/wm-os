@@ -1,11 +1,6 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./app/app";
 
-const App = () =>
-    <>
-        <h1>React Boilerplate</h1>
-        <span>by <b>Wilson Mália</b></span>
-    </>
-
-const wrapper = document.getElementById("app")
+const wrapper = document.getElementById("app");
 wrapper ? ReactDOM.render(<App />, wrapper) : false;
