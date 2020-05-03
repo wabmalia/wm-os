@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 const StartButton = () => {
     return <StartStyle>WM</StartStyle>;
@@ -12,10 +12,10 @@ const StartStyle = styled.div`
     width: 5vw;
     height: 100%;
 
-    color: white;
+    color: ${(props) => props.theme.colors.primary};
     text-align: center;
     :hover {
-        background-color: darkgray;
+        background-color: ${(props) => props.theme.colors.light};
         cursor: pointer;
     }
 `;
